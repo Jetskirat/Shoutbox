@@ -4,6 +4,7 @@ import cookieParser from "cookie-parser";
 import authRoutes from "./routes/auth.route.js";
 import userRoutes from "./routes/user.route.js";
 import postRoutes from "./routes/post.route.js";
+import notificationRoutes from "./routes/notification.route.js";
 import connectMongoDB from "./db/connectMongoDB.js";
 import {v2 as cloudinary} from "cloudinary";
 
@@ -25,6 +26,7 @@ app.use(express.urlencoded({ extended: true })); //to parse form data
 app.use("/auth/", authRoutes);
 app.use("/users/", userRoutes);
 app.use("/posts/", postRoutes);
+app.use("/notifications/", notificationRoutes);
 
 
 app.listen(PORT, () => {

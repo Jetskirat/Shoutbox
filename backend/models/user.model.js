@@ -46,6 +46,11 @@ const userSchema = new mongoose.Schema({
         type: String,
         default: "",
     },
+    likedPosts: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Post",
+        default: [],
+    }],
 }, { timestamps: true });//timestamp is a property which gives when the user was created
 
 const User=mongoose.model("User", userSchema);//user is name of collection in db

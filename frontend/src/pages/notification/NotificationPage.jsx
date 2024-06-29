@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 import LoadingSpinner from "../../components/common/LoadingSpinner";
-import { useQuery , useMutation} from "@tanstack/react-query";
+import { useQuery , useMutation, useQueryClient} from "@tanstack/react-query";
 import { IoSettingsOutline } from "react-icons/io5";
 import { FaUser } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa6";
 import toast  from "react-hot-toast";
 
 const NotificationPage = () => {
+	const queryClient = useQueryClient();
 	const { data: notifications, isLoading } = useQuery({
 		queryKey: ["notifications"],
 		queryFn: async () => {
@@ -37,7 +38,10 @@ const NotificationPage = () => {
 			}
 		},
 		onError: (error)=>{toast.error(error.message);},
-		onSuccess: ()=>{toast.success("Notifications deleted");},
+		onSuccess: ()=>{
+			toast.success("Notifications deleted");
+			queryClient.invalidateQueries({queryKey: ["notifications"]});
+		},
 	});
 
 	return (

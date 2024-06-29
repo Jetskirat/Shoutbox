@@ -23,10 +23,10 @@ app.use(express.json()); //to parse req.body
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: true })); //to parse form data
 
-app.use("/auth/", authRoutes);
-app.use("/users/", userRoutes);
-app.use("/posts/", postRoutes);
-app.use("/notifications/", notificationRoutes);
+app.use("/api/auth/", authRoutes);
+app.use("/api/users/", userRoutes);
+app.use("/api/posts/", postRoutes);
+app.use("/api/notifications/", notificationRoutes);
 
 
 app.listen(PORT, () => {

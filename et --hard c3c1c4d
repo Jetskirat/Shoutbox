@@ -1,0 +1,24 @@
+[33m1fe5ce7[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{0}: reset: moving to origin/main
+[33mc3c1c4d[m HEAD@{1}: commit: profile updation
+[33m12e9d53[m HEAD@{2}: commit: profile
+[33m88cc975[m HEAD@{3}: commit: forgot one thing
+[33m1b0d65a[m HEAD@{4}: commit: more error fixing (notifications)
+[33mf078ce5[m HEAD@{5}: commit: error fixing
+[33m9442912[m HEAD@{6}: commit: like and comment!
+[33mfdf572f[m HEAD@{7}: commit: right panel and follow functionality
+[33m684a110[m HEAD@{8}: commit: create/delete posts
+[33m48c79f8[m HEAD@{9}: commit: posts
+[33m7e8e1a4[m HEAD@{10}: commit: react query stuff
+[33m6cb022a[m HEAD@{11}: commit: UI design done
+[33m6df419d[m HEAD@{12}: commit: backend done :)
+[33mc63101f[m HEAD@{13}: commit: post controller done
+[33m3244bcb[m HEAD@{14}: commit: Completed user controller
+[33m7deca58[m HEAD@{15}: commit: signup,login,logout,authentication done
+[33mcf2e26f[m[33m ([m[1;32mmaster[m[33m)[m HEAD@{16}: checkout: moving from master to main
+[33mcf2e26f[m[33m ([m[1;32mmaster[m[33m)[m HEAD@{17}: rebase (finish): returning to refs/heads/master
+[33mcf2e26f[m[33m ([m[1;32mmaster[m[33m)[m HEAD@{18}: rebase (pick): commit one
+[33m35373f4[m HEAD@{19}: rebase (pick): 1-project setup
+[33md977e29[m HEAD@{20}: rebase (start): checkout origin/main
+[33me78c30d[m HEAD@{21}: merge origin/main: Merge made by the 'ort' strategy.
+[33mcbf7468[m HEAD@{22}: commit: commit one
+[33m44c0fdf[m HEAD@{23}: commit (initial): 1-project setup
